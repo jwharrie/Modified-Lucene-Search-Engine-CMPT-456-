@@ -1,0 +1,13 @@
+For stopwords.txt, place it in the directory /lucene/demo/data.
+
+Also for stopwords.txt, make sure each stopword has its own line. See the attached stopwords.txt file for an example.
+
+The provided files are assumed to be placed in the org.apache.lucene.demo, the same place as IndexFiles.java and SearchFiles.java.
+
+Note that IndexFiles.java is left unedited.
+
+CMPT456Analyzer is used in SearchFiles.java, HtmlIndexFiles.java, SimpleMetrics.java, TFIDFHtmlIndexFiles.java and TFIDFSearchFiles.java.
+
+SimpleMetrics.java assumes only one term will be used per query. Otherwise a document frequency will return but term frequency will be 0.
+
+Also for SimpleMetrics.java, only the document frequency and term frequency will display for each query. No search results will appear.

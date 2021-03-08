@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.apache.lucene.benchmark.byTask.feeds.DemoHTMLParser.Parser"/>
+<fullyQualifiedTypeName name="org.apache.lucene.document.Field.Store"/>
+<fullyQualifiedTypeName name="org.apache.lucene.benchmark.byTask.feeds.DocData"/>
+<fullyQualifiedTypeName name="org.apache.lucene.benchmark.byTask.feeds.TrecContentSource"/>
+<fullyQualifiedTypeName name="org.apache.lucene.analysis.standard.StandardFilter"/>
+<fullyQualifiedTypeName name="org.apache.lucene.analysis.standard.StandardTokenizer"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="java.io.FileReader"/>
+<fullyQualifiedTypeName name="java.io.BufferedReader"/>
+<fullyQualifiedTypeName name="java.nio.file.Path"/>
+<fullyQualifiedTypeName name="java.nio.file.Paths"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="org.apache.lucene.analysis.en.PorterStemFilter"/>
+<fullyQualifiedTypeName name="org.apache.lucene.index.Term"/>
+<fullyQualifiedTypeName name="org.apache.lucene.search.similarities.ClassicSimilarity"/>
+</qualifiedTypeNameHistroy>

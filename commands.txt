@@ -1,0 +1,47 @@
+FILE NAMES:
+
+IndexFiles
+HtmlIndexFiles
+TFIDFHtmlIndexFiles
+SearchFiles
+SimpleMetrics
+TFIDFSearchFiles
+CMPT454Analyzer
+
+EXEC (RUN) CONTAINER
+sudo docker exec -it luc /bin/bash
+
+COMMANDS:
+
+HtmlIndexFiles.java:
+ant -f lucene/demo/build.xml \
+-Ddocs=lucene/demo/data/wiki-small/en/articles/ run-html-indexing-demo
+
+SearchFiles.java:
+ant -f lucene/demo/build.xml run-search-index-demo
+
+TFIDFHtmlIndexFiles.java:
+ant -f lucene/demo/build.xml \
+-Ddocs=lucene/demo/data/wiki-small/en/articles/ run-tfidf-indexing
+
+TFIDFSearchFiles.java
+ant -f lucene/demo/build.xml run-tfidf-search
+
+SimpleMetrics.java
+ant -f lucene/demo/build.xml run-simple-metrics-demo
+
+
+INSTRUCTIONS TO ADD/BUILD NEW FILES:
+1) add .java file [FILE] to demo folder
+2) add [FILE] target in /build.xml file
+3) run following command:
+sudo docker cp ./lucene/demo/src/java/org/apache/lucene/demo/[FILE].java f5ad4949de62:/lucene-solr/lucene/demo/src/java/org/apache/lucene/demo
+4) run following command:
+sudo docker cp ./lucene/demo/build.xml f5ad4949de62:/lucene-solr/lucene/demo
+5) log into container
+6) run following command:
+ant -f lucene/core/build.xml; ant -f lucene/demo/build.xml
+
+
+Zoom link:
+https://sfu.zoom.us/j/8042579790
